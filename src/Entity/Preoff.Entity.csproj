@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Preoff.Entity</AssemblyName>
+    <RootNamespace>Preoff.Entity</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="All.cs" />
+    <Compile Remove="City.cs" />
+    <Compile Remove="CoreTestContext.cs" />
+    <Compile Remove="County.cs" />
+    <Compile Remove="Province.cs" />
+    <Compile Remove="Town.cs" />
+    <Compile Remove="Tuser.cs" />
+    <Compile Remove="Village.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\10.0.1\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
